@@ -1,0 +1,119 @@
+
+:root{
+  --primary:#2f8f3a;
+  --muted:#6c757d;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#222;
+  background:#fff;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+
+.topbar{font-size:.9rem}
+
+.brand-title{
+  font-weight:700;
+  color:var(--primary);
+  font-size:1.125rem;
+}
+
+
+.search-input{
+  border-radius:2px;
+  height:40px;
+}
+
+
+.hero-img{
+  height:420px;
+  object-fit:cover;
+  border-radius:6px;
+}
+.carousel-caption{
+  left:3%;
+  right:50%;
+  bottom:28%;
+  text-align:left;
+}
+.carousel-caption h2{
+  font-size:36px;
+  font-weight:700;
+  color:#fff;
+}
+.carousel-caption p{color:rgba(255,255,255,0.9)}
+
+
+.ad-img{height:160px; object-fit:cover;}
+
+
+.category-card{
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  border:1px solid #eee;
+}
+.category-card img{height:160px; object-fit:cover;}
+
+
+.section-title{
+  font-weight:700;
+  font-size:1.4rem;
+  position:relative;
+  display:inline-block;
+}
+.section-title::after{
+  content:"";
+  height:3px;
+  width:50px;
+  background:var(--primary);
+  position:absolute;
+  left:0;
+  bottom:-8px;
+}
+
+
+.product-card{
+  background:#fff;
+  border-radius:10px;
+  border:1px solid #ececec;
+  transition:.2s ease;
+}
+.product-card img{height:180px; object-fit:cover; border-radius:6px;}
+.product-card .price{color:var(--primary); font-weight:700;}
+.product-card:hover{transform:translateY(-6px); box-shadow:0 8px 30px rgba(47,143,58,0.08);}
+
+
+.best-seller{background:#fff; border-radius:8px; border:1px solid #eee;}
+
+
+.newsletter-banner img{height:220px; object-fit:cover; border-radius:8px;}
+
+
+.card img{height:180px; object-fit:cover;}
+
+
+.footer{
+  background:#f8f9fa;
+  padding:40px 0;
+  color:var(--muted);
+}
+.footer h5{color:#222}
+.footer a{color:var(--muted)}
+.footer a:hover{color:var(--primary)}
+
+
+@media (max-width:991px){
+  .carousel-caption{right:10%; left:5%}
+  .hero-img{height:300px}
+}
+@media (max-width:576px){
+  .hero-img{height:220px}
+  .ad-img{height:100px}
+  .category-card img{height:120px}
+  .product-card img{height:140px}
+}

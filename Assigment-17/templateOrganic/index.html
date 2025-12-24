@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organic Store — Home</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ 
+  <div class="topbar bg-success text-white small">
+    <div class="container d-flex justify-content-between align-items-center py-1">
+      <div>Free delivery for orders over ₹999</div>
+      <div>Call us: +91 98765 43210</div>
+    </div>
+  </div>
+
+  
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="images/banner-onlineapp.png" alt="logo" height="42">
+          <span class="brand-title">Organic Market</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <form class="d-none d-lg-flex w-50 me-3" onsubmit="return false;">
+            <input class="form-control search-input" placeholder="Search for products, categories..." aria-label="search">
+            <button class="btn btn-success ms-2">Search</button>
+          </form>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="text-center">
+              <div class="fw-bold">₹0</div>
+              <div class="small text-muted">Cart</div>
+            </div>
+            <a class="btn btn-outline-secondary btn-sm" href="#">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+   
+    <section class="container my-4">
+      <div id="heroCarousel" class="carousel slide rounded" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/banner-1.jpg" class="d-block w-100 hero-img" alt="Banner 1">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h2>Fresh Vegetables & Fruits</h2>
+              <p>Handpicked organic produce delivered to your doorstep.</p>
+              <a class="btn btn-light btn-lg text-success" href="shop.html">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/banner-ad-1.jpg" class="d-block w-100 hero-img" alt="Banner 2">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h2>Weekly Offers</h2>
+              <p>Up to 30% off on selected products.</p>
+              <a class="btn btn-light btn-lg text-success" href="shop.html">View Offers</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/banner-ad-2.jpg" class="d-block w-100 hero-img" alt="Banner 3">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h2>Fresh From The Farm</h2>
+              <p>Quality you can trust.</p>
+              <a class="btn btn-light btn-lg text-success" href="shop.html">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    
+    <section class="container mb-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="images/banner-ad-1.jpg" class="img-fluid rounded ad-img" alt="ad1">
+        </div>
+        <div class="col-md-4">
+          <img src="images/banner-ad-2.jpg" class="img-fluid rounded ad-img" alt="ad2">
+        </div>
+        <div class="col-md-4">
+          <img src="images/banner-ad-3.jpg" class="img-fluid rounded ad-img" alt="ad3">
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="section-title">Shop by Category</h3>
+        <a class="small text-success" href="shop.html">View All</a>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="category-card rounded overflow-hidden">
+            <img src="images/category-thumb-1.jpg" class="w-100" alt="cat1">
+            <div class="p-3">
+              <h6 class="mb-0">Vegetables</h6>
+              <small class="text-muted">120 items</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="category-card rounded overflow-hidden">
+            <img src="images/category-thumb-2.jpg" class="w-100" alt="cat2">
+            <div class="p-3">
+              <h6 class="mb-0">Fruits</h6>
+              <small class="text-muted">98 items</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="category-card rounded overflow-hidden">
+            <img src="images/category-thumb-3.jpg" class="w-100" alt="cat3">
+            <div class="p-3">
+              <h6 class="mb-0">Grocery</h6>
+              <small class="text-muted">220 items</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="category-card rounded overflow-hidden">
+            <img src="images/category-thumb-4.jpg" class="w-100" alt="cat4">
+            <div class="p-3">
+              <h6 class="mb-0">Beauty</h6>
+              <small class="text-muted">56 items</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="section-title">Featured Products</h3>
+        <a class="small text-success" href="shop.html">View All</a>
+      </div>
+
+      <div class="row g-4">
+      
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-1.png" class="w-100 product-img" alt="p1">
+            <div class="mt-3">
+              <h6 class="mb-1">Organic Tomato</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹120</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-2.png" class="w-100 product-img" alt="p2">
+            <div class="mt-3">
+              <h6 class="mb-1">Fresh Carrot</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹80</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-3.png" class="w-100 product-img" alt="p3">
+            <div class="mt-3">
+              <h6 class="mb-1">Organic Broccoli</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹150</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-4.png" class="w-100 product-img" alt="p4">
+            <div class="mt-3">
+              <h6 class="mb-1">Green Apple</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹180</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-5.png" class="w-100 product-img" alt="p5">
+            <div class="mt-3">
+              <h6 class="mb-1">Fresh Spinach</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹60</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-6.png" class="w-100 product-img" alt="p6">
+            <div class="mt-3">
+              <h6 class="mb-1">Fresh Ginger</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹90</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-7.png" class="w-100 product-img" alt="p7">
+            <div class="mt-3">
+              <h6 class="mb-1">Organic Potato</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹40</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <article class="product-card p-3">
+            <img src="images/product-thumb-8.png" class="w-100 product-img" alt="p8">
+            <div class="mt-3">
+              <h6 class="mb-1">Mixed Berries</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="price">₹250</div>
+                <a class="btn btn-sm btn-outline-success" href="product.html">Add</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded shadow-sm best-seller">
+            <h4>Best Sellers</h4>
+            <p class="text-muted">Most purchased items by our customers.</p>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center py-2 border-bottom">
+                <img src="images/product-thumb-1.png" alt="" width="64" class="me-3 rounded">
+                <div>
+                  <strong>Organic Tomato</strong><br>
+                  <small class="text-muted">₹120</small>
+                </div>
+                <div class="ms-auto"><a class="btn btn-sm btn-outline-success" href="product.html">Buy</a></div>
+              </li>
+
+              <li class="d-flex align-items-center py-2 border-bottom">
+                <img src="images/product-thumb-2.png" alt="" width="64" class="me-3 rounded">
+                <div>
+                  <strong>Fresh Carrot</strong><br>
+                  <small class="text-muted">₹80</small>
+                </div>
+                <div class="ms-auto"><a class="btn btn-sm btn-outline-success" href="product.html">Buy</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="images/banner-ad-3.jpg" class="w-100 rounded" alt="best-seller-ad">
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="newsletter-banner rounded overflow-hidden">
+        <img src="images/banner-newsletter.jpg" class="w-100" alt="newsletter">
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="section-title">Latest From Blog</h3>
+        <a class="small text-success" href="#">Read All</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card h-100">
+            <img src="images/category-thumb-1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h6>How to store veggies</h6>
+              <p class="small text-muted">Tips to keep your vegetables fresh for longer.</p>
+              <a class="small text-success" href="#">Read more →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card h-100">
+            <img src="images/category-thumb-2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h6>Benefits of organic food</h6>
+              <p class="small text-muted">Why choosing organic matters for health.</p>
+              <a class="small text-success" href="#">Read more →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card h-100">
+            <img src="images/category-thumb-3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h6>Seasonal recipes</h6>
+              <p class="small text-muted">Simple, healthy recipes using seasonal produce.</p>
+              <a class="small text-success" href="#">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <h5>Organic Market</h5>
+          <p class="text-muted small">Fresh produce delivered with care.</p>
+          <img src="images/banner-onlineapp.png" alt="app" height="36">
+        </div>
+
+        <div class="col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6>Support</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6>Contact</h6>
+          <p class="small text-muted">hello@organic.example<br>+91 98765 43210</p>
+        </div>
+      </div>
+
+      <div class="pt-4 text-center small text-muted">© 2025 Organic Market. All rights reserved.</div>
+    </div>
+  </footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cake Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf0;
+    }
+
+    .main {
+      min-height: 700px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      width: 90%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .header {
+      height: 120px;
+      background-color: #ffe4b5;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: #5a2d0c;
+    }
+
+    .nav {
+      height: 60px;
+      background-color: #8b4513;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .nav button {
+      background-color: #fffaf0;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #5a2d0c;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .nav button:hover {
+      background-color: #deb887;
+      color: white;
+    }
+
+    .main-content {
+      height: 300px;
+      background-color: #faf0e6;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .main-content h2 {
+      font-size: 28px;
+      color: #5a2d0c;
+    }
+
+    .main-content p {
+      font-size: 18px;
+      color: #4b2e05;
+      width: 80%;
+      margin: 15px auto;
+      line-height: 1.6;
+    }
+
+    .image-section {
+      background-color: #fff5ee;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .images {
+      width: 28%;
+      background-color: #fff;
+      height: 200px;
+      margin: 1%;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .images:hover {
+      transform: scale(1.05);
+    }
+
+    .images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .footer {
+      height: 100px;
+      background-color: #8b4513;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>The Cake Shop 🍰</h1>
+    </div>
+
+    <div class="nav">
+      <button>Menu</button>
+      <button>Contact</button>
+      <button>About Bakery</button>
+    </div>
+
+    <div class="main-content">
+      <h2>Welcome to The Cake Shop</h2>
+      <p>
+        We bake happiness with every slice! Explore our freshly made cakes, cupcakes, and desserts — perfect for every celebration.
+      </p>
+      <p>
+        From creamy chocolate to fruity delights, we make every cake with love and the finest ingredients.
+      </p>
+    </div>
+
+    <div class="image-section">
+      <div class="images">
+        <img src="./triple-chocolate-cake-4.jpg" alt="Chocolate Cake" />
+      </div>
+      <div class="images">
+        <img src="./Single-Layer-Chocolate-Cake_59.jpg" alt="Strawberry Cake" />
+      </div>
+      <div class="images">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Cupcake" />
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 The Cake Shop | All Rights Reserved
+    </div>
+  </div>
+</body>
+</html>

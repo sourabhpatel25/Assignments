@@ -1,0 +1,102 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+
+    <style>
+
+        body {
+            background:#f4f7fb;
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width:420px;
+            margin:60px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.15);
+        }
+
+        h2{
+            text-align:center;
+            color:#2c3e50;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-weight:bold;
+            display:block;
+            margin-top:12px;
+            margin-bottom:4px;
+            color:#34495e;
+        }
+
+        input, select{
+            width:100%;
+            padding:10px;
+            border-radius:5px;
+            border:1px solid #ccc;
+            font-size:15px;
+        }
+
+        input:focus, select:focus{
+            outline:none;
+            border-color:#27ae60;
+            box-shadow:0px 0px 5px rgba(39,174,96,0.3);
+        }
+
+        button{
+            width:100%;
+            margin-top:18px;
+            background:#27ae60;
+            border:none;
+            color:white;
+            padding:12px;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#219150;
+        }
+
+    </style>
+<%@include file="__bootstrap_link.jsp" %>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Add New Product</h2>
+
+    <form action="controller/add_product.jsp" method="post">
+
+        <!-- Product Name -->
+        <label>Product Name</label>
+        <input type="text" name="name" required placeholder="Enter product name">
+
+        <!-- Price -->
+        <label>Price (₹)</label>
+        <input type="number" name="price" step="0.01" required placeholder="Enter price">
+
+        <!-- Stock -->
+        <label>Quentity</label>
+        <input type="number" name="quantity" required placeholder="Enter available stock">
+
+        <!-- Category -->
+       
+
+        <button type="submit">Add Product</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

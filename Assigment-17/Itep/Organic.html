@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="main-header shadow-sm py-3">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+
+            <div class="d-flex align-items-center gap-3">
+                <img src="images/organic-food-logo-design_1097540-40.avif" alt="Logo" class="logo-img">
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <h3 class="brand-name m-0">Organic</h3>
+            </div>
+
+
+            <div class="search-box d-flex align-items-center px-3">
+                <select class="form-select border-0 category-select">
+                    <option>All Categories</option>
+                </select>
+
+                <input type="text" class="form-control border-0 search-input"
+                    placeholder="Search for more than 20,000 products">
+
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+
+
+            <div class="d-flex align-items-center gap-4 header-icons">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-6 hero-text">
+                    <h1><span class="green">Organic</span> Foods at <br> your <span class="bold">Doorsteps</span></h1>
+                    <p>Dignissim massa diam elementum.</p>
+
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="btn btn-success btn-lg px-4 rounded-pill">START SHOPPING</a>
+                        <a href="#" class="btn btn-dark btn-lg px-4 rounded-pill">JOIN NOW</a>
+                    </div>
+
+
+                    <div class="stats mt-5 d-flex gap-5">
+                        <div>
+                            <h3>14k+</h3>
+                            <p>PRODUCT VARIETIES</p>
+                        </div>
+                        <div>
+                            <h3>50k+</h3>
+                            <p>HAPPY CUSTOMERS</p>
+                        </div>
+                        <div>
+                            <h3>10+</h3>
+                            <p>STORE LOCATIONS</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 hero-image">
+                    <img src="https://img.freepik.com/premium-psd/yellow-apple-isolated-white-background_1264610-15920.jpg" class="img-fluid" alt="Fruits">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container info-box-row">
+            <div class="row g-0">
+
+                <div class="col-md-4 info-box bg-green text-white p-4">
+                    <i class="fa-solid fa-rotate fa-2x"></i>
+                    <h4 class="mt-3 mb-2">Fresh from farm</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                </div>
+
+                <div class="col-md-4 info-box bg-dark-green text-white p-4">
+                    <i class="fa-solid fa-seedling fa-2x"></i>
+                    <h4 class="mt-3 mb-2">100% Organic</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                </div>
+
+                <div class="col-md-4 info-box bg-orange text-white p-4">
+                    <i class="fa-solid fa-truck fa-2x"></i>
+                    <h4 class="mt-3 mb-2">Free delivery</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="fw-bold">Category</h3>
+            <button class="btn btn-success btn-sm">View All</button>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center category-container">
+
+            <div class="category-item">
+                <img src="images/category-thumb-1.jpg" class="category-img">
+                <p>Fruits & Veges</p>
+            </div>
+
+            <div class="category-item">
+                <img src="images/category-thumb-2.jpg" class="category-img">
+                <p>Breads & Sweets</p>
+            </div>
+
+            <div class="category-item">
+                <img src="images/category-thumb-3.jpg" class="category-img">
+                <p>Meat Products</p>
+            </div>
+
+            <div class="category-item">
+                <img src="images/category-thumb-4.jpg" class="category-img">
+                <p>Beverages</p>
+            </div>
+
+            <div class="category-item">
+                <img src="images/category-thumb-7.jpg" class="category-img">
+                <p>Breads</p>
+            </div>
+
+            <div class="category-item">
+                <img src="images/category-thumb-4.jpg" class="category-img">
+                <p>Fruits & Veges</p>
+            </div>
+
+            <div class="category-item">
+                <img src="images/category-thumb-7.jpg" class="category-img">
+                <p>Breads & Sweets</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold">Best selling products</h3>
+            <button class="btn btn-success btn-sm">View All</button>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center best-products">
+
+            <div class="product-card">
+                <img src="images/product-thumb-1.png" class="product-img">
+                <h6 class="title">Whole Wheat Sandwich Bread</h6>
+
+                <div class="rating">
+                    <span class="text-warning">★★★★★</span>
+                    <span class="text-muted">(222)</span>
+                </div>
+
+                <div class="price">
+                    <span class="old">$24.00</span>
+                    <span class="new">$18.00</span>
+                    <span class="tag">10% OFF</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product-thumb-2.png" class="product-img">
+                <h6 class="title">Whole Grain Oatmeal</h6>
+
+                <div class="rating">
+                    <span class="text-warning">★★★★★</span>
+                    <span class="text-muted">(41)</span>
+                </div>
+
+                <div class="price">
+                    <span class="old">$54.00</span>
+                    <span class="new">$50.00</span>
+                    <span class="tag">10% OFF</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product-thumb-3.png" class="product-img">
+                <h6 class="title">Sharp Cheddar Cheese Block</h6>
+
+                <div class="rating">
+                    <span class="text-warning">★★★★★</span>
+                    <span class="text-muted">(32)</span>
+                </div>
+
+                <div class="price">
+                    <span class="old">$14.00</span>
+                    <span class="new">$12.00</span>
+                    <span class="tag">10% OFF</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product-thumb-5.png" class="product-img">
+                <h6 class="title">Organic Baby Spinach</h6>
+
+                <div class="rating">
+                    <span class="text-warning">★★★★★</span>
+                    <span class="text-muted">(222)</span>
+                </div>
+
+                <div class="price">
+                    <span class="old">$24.00</span>
+                    <span class="new">$18.00</span>
+                    <span class="tag">10% OFF</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product-thumb-6.png" class="product-img">
+                <h6 class="title">Organic Spinach Leaves (Fresh Produce)</h6>
+
+                <div class="rating">
+                    <span class="text-warning">★★★★★</span>
+                    <span class="text-muted">(222)</span>
+                </div>
+
+                <div class="price">
+                    <span class="old">$24.00</span>
+                    <span class="new">$18.00</span>
+                    <span class="tag">10% OFF</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container py-5">
+
+            <div class="d-flex flex-wrap justify-content-center best-products">
+
+                <div class="product-card">
+                    <img src="images/product-thumb-7.png" class="product-img">
+                    <h6 class="title">Whole Wheat Sandwich Bread</h6>
+
+                    <div class="rating">
+                        <span class="text-warning">★★★★★</span>
+                        <span class="text-muted">(222)</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="old">$24.00</span>
+                        <span class="new">$18.00</span>
+                        <span class="tag">10% OFF</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product-thumb-16.png" class="product-img">
+                    <h6 class="title">Whole Grain Oatmeal</h6>
+
+                    <div class="rating">
+                        <span class="text-warning">★★★★★</span>
+                        <span class="text-muted">(41)</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="old">$54.00</span>
+                        <span class="new">$50.00</span>
+                        <span class="tag">10% OFF</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product-thumb-8.png" class="product-img">
+                    <h6 class="title">Sharp Cheddar Cheese Block</h6>
+
+                    <div class="rating">
+                        <span class="text-warning">★★★★★</span>
+                        <span class="text-muted">(32)</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="old">$14.00</span>
+                        <span class="new">$12.00</span>
+                        <span class="tag">10% OFF</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product-thumb-13.png" class="product-img">
+                    <h6 class="title">Organic Baby Spinach</h6>
+
+                    <div class="rating">
+                        <span class="text-warning">★★★★★</span>
+                        <span class="text-muted">(222)</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="old">$24.00</span>
+                        <span class="new">$18.00</span>
+                        <span class="tag">10% OFF</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product-thumb-9.png" class="product-img">
+                    <h6 class="title">Organic Spinach Leaves (Fresh Produce)</h6>
+
+                    <div class="rating">
+                        <span class="text-warning">★★★★★</span>
+                        <span class="text-muted">(222)</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="old">$24.00</span>
+                        <span class="new">$18.00</span>
+                        <span class="tag">10% OFF</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="offers-wrapper">
+
+
+                <div class="offer-box big"
+                    style="background-image: url('https://okcredit-blog-images-prod.storage.googleapis.com/2020/11/shutterstock_566591296.jpg');">
+                    <div class="text">
+                        <h2>Items on SALE</h2>
+                        <p>Discounts up to 30%</p>
+                        <a href="#" class="btn-shop">SHOP NOW</a>
+                    </div>
+                </div>
+
+
+                <div class="offer-box small"
+                    style="background-image: url('https://th.bing.com/th/id/OIP.kQlOa4NyG23-grApVuZBYQHaDX?w=296&h=159&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3');">
+                    <div class="text">
+                        <h2>Combo offers</h2>
+                        <p>Discounts up to 50%</p>
+                        <a href="#" class="btn-shop">SHOP NOW</a>
+                    </div>
+                </div>
+
+
+                <div class="offer-box small"
+                    style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.Zt3_A2MKWHkr4je6eF7IkAHaEL?rs=1&pid=ImgDetMain&o=7&rm=3');">
+                    <div class="text">
+                        <h2>Discount Coupons</h2>
+                        <p>Discounts up to 40%</p>
+                        <a href="#" class="btn-shop">SHOP NOW</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container my-5">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="fw-bold fs-2">Featured products</div>
+                    <button class="btn btn-success btn-sm">View All</button>
+                </div>
+
+                <div class="row g-4">
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="p-3 product-box text-center">
+                            <div><img src="https://themewagon.github.io/organic/images/product-thumb-10.png"
+                                    class="product-img mb-3"></div>
+                            <div class="product-title">Greek Style Plain Yogurt</div>
+
+                            <div class="stars mb-2">⭐⭐⭐⭐⭐ <span class="text-muted">(222)</span></div>
+
+                            <div class="mb-1">
+                                <del>$24.00</del> <span class="fw-bold">$18.00</span>
+                            </div>
+
+                            <div class="badge bg-light border text-dark">10% OFF</div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="p-3 product-box text-center">
+                            <div><img src="https://themewagon.github.io/organic/images/product-thumb-11.png"
+                                    class="product-img mb-3"></div>
+                            <div class="product-title">Pure Squeezed No Pulp Orange Juice</div>
+                            <div class="stars mb-2">⭐⭐⭐⭐⭐ <span class="text-muted">(222)</span></div>
+                            <div class="mb-1"><del>$24.00</del> <span class="fw-bold">$18.00</span></div>
+                            <div class="badge bg-light border text-dark">10% OFF</div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="p-3 product-box text-center">
+                            <div><img src="https://themewagon.github.io/organic/images/product-thumb-12.png"
+                                    class="product-img mb-3"></div>
+                            <div class="product-title">Fresh Oranges</div>
+                            <div class="stars mb-2">⭐⭐⭐⭐⭐ <span class="text-muted">(222)</span></div>
+                            <div class="mb-1"><del>$24.00</del> <span class="fw-bold">$18.00</span></div>
+                            <div class="badge bg-light border text-dark">10% OFF</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="p-3 product-box text-center">
+                            <div><img src="https://themewagon.github.io/organic/images/product-thumb-13.png"
+                                    class="product-img mb-3"></div>
+                            <div class="product-title">Gourmet Dark Chocolate Bars</div>
+                            <div class="stars mb-2">⭐⭐⭐⭐⭐ <span class="text-muted">(222)</span></div>
+                            <div class="mb-1"><del>$24.00</del> <span class="fw-bold">$18.00</span></div>
+                            <div class="badge bg-light border text-dark">10% OFF</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="signup-banner"
+                style="background-image: url('https://img.freepik.com/premium-photo/closeup-dark-green-leaves-leaves-are-lush-look-healthy-vibrant-gentle-light-illuminates-certain-parts-leaves-highlighting-their-natural-beauty_717906-12726.jpg');">
+
+                <div class="left">
+                    <h1>Get 25% Discount on<br>your first purchase</h1>
+                    <p>Just Sign Up & Register it now to become member.</p>
+                </div>
+
+                <div class="right">
+                    <input type="text" class="input-box" placeholder="Name">
+                    <input type="email" class="input-box" placeholder="Email Address">
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+            </div>
+
+
+            <div class="container my-5" id="most-popular-wrapper">
+
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="section-title mb-0">Most popular products</h3>
+                    <div>
+                        <button class="btn btn-success btn-sm me-2">View All</button>
+                    </div>
+                </div>
+
+                <div class="row gx-4 gy-4">
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-15.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Sandwich Bread</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-16.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Honeycrisp Apples</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-9.png" alt="product"
+                                    class="product-img">
+                            </div>
+                            <h6 class="product-title">Whole Wheat Sandwich Bread</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-18.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Honeycrisp Apples</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-11.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Sunstar Fresh Melon Juice</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-10.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Sunstar Fresh Melon Juice</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container my-5" id="most-popular-wrapper">
+
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="section-title mb-0">Just Arrived</h3>
+                    <div>
+                        <button class="btn btn-success btn-sm me-2">View All</button>
+                    </div>
+                </div>
+
+                <div class="row gx-4 gy-4">
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-20.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Sandwich Bread</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-1.png" alt="product"
+                                    class="product-img">
+                            </div>
+                            <h6 class="product-title">Honeycrisp Apples</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-22.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Whole Wheat Sandwich Bread</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-17.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Honeycrisp Apples</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-23.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Sunstar Fresh Melon Juice</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="product-card text-center p-3">
+                            <div class="product-img-wrap mb-3">
+                                <img src="https://themewagon.github.io/organic/images/product-thumb-12.png"
+                                    alt="product" class="product-img">
+                            </div>
+                            <h6 class="product-title">Sunstar Fresh Melon Juice</h6>
+
+                            <div class="rating mt-2 mb-2">
+                                <span class="stars">★ ★ ★ ★ ★</span>
+                                <span class="reviews">(222)</span>
+                            </div>
+
+                            <div class="price-row d-flex align-items-center justify-content-center gap-2">
+                                <span class="old-price">$24.00</span>
+                                <span class="price">$18.00</span>
+                                <span class="badge-discount">10% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container my-5" id="recent-blog">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="blog-title">Our Recent Blog</h3>
+                    <button class="btn btn-success btn-sm">View All</button>
+                </div>
+
+                <div class="row g-4">
+
+
+                    <div class="col-md-4">
+                        <div class="blog-card p-0">
+                            <img src="https://themewagon.github.io/organic/images/post-thumbnail-1.jpg" class="blog-img"
+                                alt="">
+                            <div class="p-3">
+                                <p class="blog-meta">
+                                    📅 22 AUG 2021 &nbsp;&nbsp; 📂 TIPS & TRICKS
+                                </p>
+                                <h5 class="blog-heading">Top 10 casual look ideas to dress up your kids</h5>
+                                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+                                    eleifend viverra enim tincidunt donec quam…</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div class="col-md-4">
+                        <div class="blog-card p-0">
+                            <img src="https://themewagon.github.io/organic/images/post-thumbnail-2.jpg" class="blog-img"
+                                alt="">
+                            <div class="p-3">
+                                <p class="blog-meta">
+                                    📅 25 AUG 2021 &nbsp;&nbsp; 📂 TRENDING
+                                </p>
+                                <h5 class="blog-heading">Latest trends of wearing street wears supremely</h5>
+                                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+                                    eleifend viverra enim tincidunt donec quam…</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="blog-card p-0">
+                            <img src="https://themewagon.github.io/organic/images/post-thumbnail-3.jpg" class="blog-img"
+                                alt="">
+                            <div class="p-3">
+                                <p class="blog-meta">
+                                    📅 28 AUG 2021 &nbsp;&nbsp; 📂 INSPIRATION
+                                </p>
+                                <h5 class="blog-heading">10 Different Types of comfortable clothes ideas for women</h5>
+                                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+                                    eleifend viverra enim tincidunt donec quam…</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container my-5" id="people-looking">
+                <h3 class="mb-4">People are also looking for</h3>
+
+                <div class="looking-tags d-flex flex-wrap gap-2">
+                    <span class="tag-item">Blue diamon almonds</span>
+                    <span class="tag-item">Angie’s Boomchickapop Corn</span>
+                    <span class="tag-item">Salty kettle Corn</span>
+                    <span class="tag-item">Chobani Greek Yogurt</span>
+                    <span class="tag-item">Sweet Vanilla Yogurt</span>
+                    <span class="tag-item">Foster Farms Takeout Crispy wings</span>
+
+                    <span class="tag-item">Warrior Blend Organic</span>
+                    <span class="tag-item">Chao Cheese Creamy</span>
+                    <span class="tag-item">Chicken meatballs</span>
+
+                    <span class="tag-item">Blue diamon almonds</span>
+                    <span class="tag-item">Angie’s Boomchickapop Corn</span>
+                    <span class="tag-item">Salty kettle Corn</span>
+                    <span class="tag-item">Chobani Greek Yogurt</span>
+
+                    <span class="tag-item">Sweet Vanilla Yogurt</span>
+                    <span class="tag-item">Foster Farms Takeout Crispy wings</span>
+                    <span class="tag-item">Warrior Blend Organic</span>
+                    <span class="tag-item">Chao Cheese Creamy</span>
+                    <span class="tag-item">Chicken meatballs</span>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <div class="mb-2">🚚</div>
+                            <h6>Free delivery</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <div class="mb-2">🔒</div>
+                            <h6>100% secure payment</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <div class="mb-2">✔</div>
+                            <h6>Quality guarantee</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <div class="mb-2">🎁</div>
+                            <h6>Daily offers</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="footer-logo mb-3">🌱 Organic</div>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i>📘</a>
+                                <a href="#"><i class="bi bi-twitter"></i>🐦</a>
+                                <a href="#"><i class="bi bi-instagram"></i>📸</a>
+                                <a href="#"><i class="bi bi-youtube"></i>▶</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h6 class="footer-heading">Organic</h6>
+                            <p>About us</p>
+                            <p>Conditions</p>
+                            <p>Our Journals</p>
+                            <p>Careers</p>
+                            <p>Affiliate Programme</p>
+                            <p>Ultras Press</p>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h6 class="footer-heading">Quick Links</h6>
+                            <p>Offers</p>
+                            <p>Discount Coupons</p>
+                            <p>Stores</p>
+                            <p>Track Order</p>
+                            <p>Shop</p>
+                            <p>Info</p>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h6 class="footer-heading">Subscribe Us</h6>
+                            <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                                <button class="btn btn-dark">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
+</div>
+</body>
+
+</html>
